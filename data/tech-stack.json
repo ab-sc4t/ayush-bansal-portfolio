@@ -12,13 +12,8 @@
                 "color": "blue"
             },
             {
-                "name": "Motion",
+                "name": "Lottie",
                 "logo": "→",
-                "color": "blue"
-            },
-            {
-                "name": "SSJS",
-                "logo": "SS",
                 "color": "blue"
             },
             {
@@ -40,11 +35,6 @@
                 "name": "pnpm",
                 "logo": "📦",
                 "color": "orange"
-            },
-            {
-                "name": "Bun",
-                "logo": "😊",
-                "color": "white"
             },
             {
                 "name": "Git",
@@ -74,12 +64,7 @@
                 "color": "green"
             },
             {
-                "name": "Docker",
-                "logo": "🐳",
-                "color": "blue"
-            },
-            {
-                "name": "AWS",
+                "name": "AWS S3",
                 "logo": "☁️",
                 "color": "orange"
             },
@@ -94,24 +79,14 @@
                 "color": "purple"
             },
             {
-                "name": "Framer",
+                "name": "Render",
                 "logo": "⚡",
                 "color": "blue"
-            },
-            {
-                "name": "Stripe",
-                "logo": "💳",
-                "color": "purple"
-            },
-            {
-                "name": "PlanetScale",
-                "logo": "🌍",
-                "color": "green"
             }
         ],
         [
             {
-                "name": "Zustand",
+                "name": "Github Pages",
                 "logo": "🐻",
                 "color": "orange"
             },
@@ -126,7 +101,7 @@
                 "color": "blue"
             },
             {
-                "name": "TanStack",
+                "name": "SWR",
                 "logo": "📊",
                 "color": "green"
             },
@@ -144,21 +119,6 @@
                 "name": "Lucide",
                 "logo": "👁️",
                 "color": "gray"
-            },
-            {
-                "name": "Clerk",
-                "logo": "🔐",
-                "color": "purple"
-            },
-            {
-                "name": "Resend",
-                "logo": "📧",
-                "color": "blue"
-            },
-            {
-                "name": "Uploadthing",
-                "logo": "📤",
-                "color": "green"
             }
         ]
     ]

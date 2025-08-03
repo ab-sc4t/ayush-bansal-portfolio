@@ -21,17 +21,6 @@ export function AboutMe() {
                             I love working on challenging projects, collaborating with others, and staying updated with the latest in tech. I am driven by continuous learning and aim to make a positive impact through my work.
                         </p>
                     </div>
-
-                    {/* Action Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-                        <Button
-                            size="lg"
-                            className="px-8 py-4 bg-gray-900/20 hover:bg-gray-800/30 text-purple-400 border border-purple-400/50 hover:border-purple-400/70 rounded-xl backdrop-blur-md text-base font-medium transition-all duration-300 shadow-lg hover:shadow-purple-500/60 flex items-center gap-3"
-                        >
-                            <Code className="h-5 w-5" />
-                            View Projects
-                        </Button>
-                    </div>
                 </div>
             </div>
         </section>
