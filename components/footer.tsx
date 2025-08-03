@@ -52,7 +52,7 @@ export function Footer() {
                                     size="icon"
                                     className="border-gray-700/50 text-gray-300 hover:text-white hover:border-gray-600/50"
                                 >
-                                    <a href="mailto:ayushbansal2612@gmail.com">
+                                    <a href="mailto:hello.ayushbansal@gmail.com">
                                         <Mail className="h-5 w-5" />
                                     </a>
                                 </Button>
@@ -102,7 +102,7 @@ export function Footer() {
                             <div className="space-y-3">
                                 <p className="text-gray-300">
                                     <span className="text-purple-400">Email:</span><br />
-                                    ayushbansal2612@gmail.com
+                                    hello.ayushbansal@gmail.com
                                 </p>
                                 <p className="text-gray-300">
                                     <span className="text-purple-400">Location:</span><br />

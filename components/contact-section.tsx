@@ -28,7 +28,7 @@ export function ContactSection() {
         setIsSubmitting(true)
 
         // Create mailto link with form data
-        const mailtoLink = `mailto:ayushbansal2612@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+        const mailtoLink = `mailto:hello.ayushbansal@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
             `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
         )}`
 
@@ -148,7 +148,7 @@ export function ContactSection() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold text-white">Email</h3>
-                                        <p className="text-gray-300">ayushbansal2612@gmail.com</p>
+                                        <p className="text-gray-300">hello.ayushbansal@gmail.com</p>
                                     </div>
                                 </div>
                                 <Button
@@ -156,7 +156,7 @@ export function ContactSection() {
                                     size="lg"
                                     className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white"
                                 >
-                                    <a href="mailto:ayushbansal2612@gmail.com">
+                                    <a href="mailto:hello.ayushbansal@gmail.com">
                                         <Mail className="h-5 w-5 mr-2" />
                                         Send Email Directly
                                     </a>

@@ -98,7 +98,7 @@ export function Hero() {
             onClick={copyEmail}
             className="text-white px-7 py-4 text-base font-semibold rounded-xl transition-all duration-200 hover:bg-transparent"
           >
-            {copied ? "Copied to clipboard!" : <div className="flex items-center gap-2"><Copy className="h-5 w-5" /> ayushbansal2612@gmail.com</div>}
+            {copied ? "Copied to clipboard!" : <div className="flex items-center gap-2"><Copy className="h-5 w-5" /> hello.ayushbansal@gmail.com</div>}
           </Button>
         </div>
       </div>
