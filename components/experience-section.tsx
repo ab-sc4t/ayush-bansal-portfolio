@@ -56,8 +56,75 @@ export function ExperienceSection() {
                     </h2>
                 </div>
 
-                {/* Experience Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative">
+                {/* Mobile Layout (less than lg) */}
+                <div className="lg:hidden space-y-12">
+                    {experiences.map((experience, index) => (
+                        <div key={experience.id} className="space-y-6">
+                            {/* Company Name as Heading */}
+                            <div className="space-y-2">
+                                <h3 className="text-2xl font-bold text-white">{experience.company}</h3>
+                                <p className="text-purple-400 text-lg font-semibold">{experience.role}</p>
+                                <p className="text-gray-400 text-sm">{experience.duration}</p>
+                            </div>
+                            
+                            {/* Description */}
+                            <p className="text-gray-300 text-lg leading-relaxed">
+                                {experience.description}
+                            </p>
+                            
+                            {/* Key Achievements */}
+                            <div className="space-y-3">
+                                <h4 className="text-white font-semibold">Key Achievements</h4>
+                                {experience.achievements.map((achievement, idx) => (
+                                    <div key={idx} className="flex items-start gap-3">
+                                        <Sparkles className="h-4 w-4 text-yellow-400 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-300 text-sm">{achievement}</span>
+                                    </div>
+                                ))}
+                            </div>
+                            
+                            {/* Technologies Used */}
+                            <div className="space-y-4">
+                                <h4 className="text-white font-semibold">Technologies Used</h4>
+                                <div className="grid grid-cols-3 gap-3">
+                                    {experience.techStack.map((tech, idx) => (
+                                        <div
+                                            key={idx}
+                                            className="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-700/50 bg-gray-900/20 backdrop-blur-sm"
+                                        >
+                                            <span className="text-gray-300 text-xs font-medium">{tech.name}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            
+                            {/* Company Link */}
+                            {experience.companyUrl && (
+                                <div className="flex gap-4 pt-4">
+                                    <Button
+                                        asChild
+                                        size="sm"
+                                        variant="outline"
+                                        className="border-gray-700/50 text-gray-300 hover:text-white hover:border-gray-600/50"
+                                    >
+                                        <a href={experience.companyUrl} target="_blank" rel="noopener noreferrer">
+                                            <ExternalLink className="h-4 w-4 mr-2" />
+                                            Visit Company
+                                        </a>
+                                    </Button>
+                                </div>
+                            )}
+                            
+                            {/* Divider */}
+                            {index < experiences.length - 1 && (
+                                <div className="border-t border-gray-700/50 pt-8"></div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+
+                {/* Desktop Layout (lg and above) */}
+                <div className="hidden lg:grid grid-cols-2 gap-12 items-start relative">
                     {/* Left: Experience Cards */}
                     <div className="space-y-6 pb-32">
                         {experiences.map((experience, index) => (
@@ -111,9 +178,6 @@ export function ExperienceSection() {
                                             key={idx}
                                             className="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-700/50 bg-gray-900/20 backdrop-blur-sm"
                                         >
-                                            {/* <span className={`text-sm ${tech.color === 'white' ? 'text-white' : tech.color === 'green' ? 'text-green-400' : tech.color === 'blue' ? 'text-blue-400' : tech.color === 'yellow' ? 'text-yellow-400' : tech.color === 'purple' ? 'text-purple-400' : tech.color === 'gray' ? 'text-gray-400' : 'text-white'}`}>
-                                                {tech.icon}
-                                            </span> */}
                                             <span className="text-gray-300 text-xs font-medium">{tech.name}</span>
                                         </div>
                                     ))}

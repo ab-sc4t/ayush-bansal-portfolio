@@ -1,10 +1,11 @@
 "use client"
 
-import { Github } from "lucide-react"
+import { Github, Menu, X } from "lucide-react"
 import { useState } from "react"
 
 export function Header() {
   const [activeItem, setActiveItem] = useState("Home")
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navItems = [
     { name: "Home", href: "#home" },
@@ -13,6 +14,13 @@ export function Header() {
     { name: "Work", href: "#work" },
     { name: "Projects", href: "#project" },
   ]
+
+  const handleNavClick = (item: { name: string; href: string }) => {
+    setActiveItem(item.name)
+    setIsMobileMenuOpen(false)
+    const el = document.querySelector(item.href)
+    if (el) el.scrollIntoView({ behavior: "smooth" })
+  }
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 py-2 pointer-events-none">
@@ -23,8 +31,9 @@ export function Header() {
             Ayush Bansal
           </span>
         </div>
-        {/* Center: Nav */}
-        <nav className="relative pointer-events-auto">
+        
+        {/* Center: Desktop Nav - Hidden on mobile */}
+        <nav className="relative pointer-events-auto hidden md:block">
           <div className="relative flex items-center px-2 py-0 rounded-full shadow-[0_2px_18px_0_rgba(0,0,0,0.18)] bg-[rgba(44,44,44,0.56)] border border-white/10 backdrop-blur-[10px] min-h-[44px]">
             {/* Glow */}
             <span className="absolute -inset-1 z-0 rounded-full bg-gradient-to-r from-white/5 via-white/10 to-white/5 blur-xl pointer-events-none" />
@@ -32,11 +41,7 @@ export function Header() {
               {navItems.map((item) => (
                 <button
                   key={item.name}
-                  onClick={() => {
-                    setActiveItem(item.name)
-                    const el = document.querySelector(item.href)
-                    if (el) el.scrollIntoView({ behavior: "smooth" })
-                  }}
+                  onClick={() => handleNavClick(item)}
                   className={`relative flex items-center justify-center h-10 px-6 text-base font-semibold transition-all duration-200 outline-none
                     ${activeItem === item.name 
                       ? "text-white border-b-2 border-white" 
@@ -51,11 +56,67 @@ export function Header() {
             </div>
           </div>
         </nav>
-        {/* Right: ⌘ Icon */}
-        <div className="flex-1 flex justify-end items-center pointer-events-auto">
-        <a href="https://github.com/ab-sc4t" target="_blank" rel="noopener noreferrer">
-          <Github className="h-5 w-5" />
-        </a>
+
+        {/* Right: GitHub Icon + Mobile Menu Button */}
+        <div className="flex-1 flex justify-end items-center pointer-events-auto gap-4 mr-4">
+          <a href="https://github.com/ab-sc4t" target="_blank" rel="noopener noreferrer">
+            <Github className="h-5 w-5" />
+          </a>
+          
+          {/* Mobile Menu Button - Only visible on mobile */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-white p-2"
+            aria-label="Toggle mobile menu"
+          >
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Side Navbar */}
+      <div className={`fixed inset-0 z-50 md:hidden ${isMobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}>
+        {/* Backdrop */}
+        <div 
+          className={`absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
+            isMobileMenuOpen ? 'opacity-100' : 'opacity-0'
+          }`}
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+        
+        {/* Side Menu */}
+        <div className={`absolute right-0 top-0 h-full w-64 bg-[rgba(44,44,44,0.95)] border-l border-white/10 backdrop-blur-[10px] shadow-2xl transition-transform duration-300 ease-in-out ${
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}>
+          {/* Close Button */}
+          <div className="flex justify-end p-4">
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+              aria-label="Close mobile menu"
+            >
+              <X className="h-6 w-6" />
+            </button>
+          </div>
+          
+          {/* Navigation Items */}
+          <nav className="px-4 py-8">
+            <div className="space-y-2">
+              {navItems.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => handleNavClick(item)}
+                  className={`w-full text-left px-4 py-3 rounded-lg text-lg font-semibold transition-all duration-200 ${
+                    activeItem === item.name
+                      ? "text-white bg-white/10 border-l-4 border-white"
+                      : "text-white/80 hover:text-white hover:bg-white/5"
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ))}
+            </div>
+          </nav>
         </div>
       </div>
     </header>
