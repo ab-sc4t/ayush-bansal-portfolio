@@ -1,0 +1,222 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "PeerSend",
+            "description": "PeerSend is a privacy-first mailing platform that enables users to communicate securely with end-to-end encryption, ensuring that even the server cannot read message contents. Built with Next.js and PostgreSQL, PeerSend leverages advanced cryptographic techniques for unmatched data privacy and integrity.",
+            "features": [
+                "End-to-end encrypted messaging using a blend of public-private key cryptography and AES-256 for double encryption",
+                "Server-side message unreadability and tamper-evident verification for recipients",
+                "Mnemonic-based private key recovery, ensuring keys are never stored in the database",
+                "SEO-optimized web application with robust database management using Prisma",
+                "User-friendly interface for seamless and secure communication"
+            ],
+            "techStack": [
+                {
+                    "name": "Next.js",
+                    "icon": "▲",
+                    "color": "white"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "~",
+                    "color": "blue"
+                },
+                {
+                    "name": "Prisma",
+                    "icon": "△",
+                    "color": "blue"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": "🐘",
+                    "color": "blue"
+                },
+                {
+                    "name": "AES-256",
+                    "icon": "🔒",
+                    "color": "yellow"
+                },
+                {
+                    "name": "Ed25519",
+                    "icon": "🔒",
+                    "color": "blue"
+                }
+            ],
+            "image": "/peersend.png",
+            "githubUrl": "https://github.com/ab-sc4t/peersend",
+            "liveUrl": "unavailable"
+        },
+        {
+            "id": 2,
+            "title": "PlacementPro",
+            "description": "A placement management system built with Next.js and TypeScript, designed for students to easily monitor company recruitment details and seamlessly add important placement exam dates to their personal calendars. The platform emphasizes secure authentication and smooth user experience.",
+            "features": [
+                "Next.js and TypeScript-based web application for tracking company recruitment information",
+                "Google/Apple Calendar API integration for one-click addition of placement exam dates",
+                "Secure authentication and session management implemented with NextAuth",
+                "Optimized backend using Prisma ORM and PostgreSQL database for efficient data handling"
+            ],
+            "techStack": [
+                {
+                    "name": "Next.js",
+                    "icon": "▲",
+                    "color": "blue"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "TS",
+                    "color": "green"
+                },
+                {
+                    "name": "Prisma",
+                    "icon": "△",
+                    "color": "yellow"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": "🐘",
+                    "color": "green"
+                },
+                {
+                    "name": "NextAuth",
+                    "icon": "�",
+                    "color": "gray"
+                },
+                {
+                    "name": "Google Calendar API",
+                    "icon": "🗓️",
+                    "color": "green"
+                }
+            ],
+            "image": "/placementPro.png",
+            "githubUrl": "https://github.com/ab-sc4t/placement-management",
+            "liveUrl": "unavailable"
+        },
+        {
+            "id": 3,
+            "title": "VeriCrypt (npm package)",
+            "description": "Developed an npm package that streamlines cryptographic operations by allowing developers to use a single Ed25519 key pair for both digital signing/verification and encryption/decryption (via X25519). The package is designed for simplicity, security, and efficiency in secure messaging workflows.",
+            "features": [
+                "Automatic conversion of Ed25519 keys to X25519 for encryption and decryption",
+                "Unified key pair enables both signing/verification and encryption/decryption, reducing code complexity",
+                "Follows cryptographic best practices for secure message transmission",
+                "Simplifies development by handling key conversion and management internally"
+            ],
+            "techStack": [
+                {
+                    "name": "Node.js",
+                    "icon": "🟢",
+                    "color": "green"
+                },
+                {
+                    "name": "npm",
+                    "icon": "🔄",
+                    "color": "purple"
+                },
+                {
+                    "name": "Ed25519",
+                    "icon": "🔒",
+                    "color": "blue"
+                },
+                {
+                    "name": "X25519",
+                    "icon": "🔒",
+                    "color": "blue"
+                },
+                {
+                    "name": "tweetnacl",
+                    "icon": "▲",
+                    "color": "black"
+                }
+            ],
+            "image": "/vericrypt.png",
+            "githubUrl": "https://github.com/ab-sc4t/VeriCrypt",
+            "liveUrl": "unavailable"
+        },
+        {
+            "id": 4,
+            "title": "DSA LeetCode Patterns (Revamped)",
+            "description": "A curated collection of essential Data Structures and Algorithms (DSA) patterns and solutions, designed to help students and professionals systematically prepare for coding interviews. The repository organizes LeetCode problems by patterns, offering clear explanations and optimized solutions in C++.",
+            "features": [
+                "Categorized LeetCode problems based on common DSA patterns (e.g., sliding window, two pointers, binary search)",
+                "Optimized C++ solutions with clear, well-commented code",
+                "Concise pattern-based explanations to reinforce problem-solving strategies",
+                "Ideal for interview preparation and revising core DSA concepts",
+                "Continuously updated with new patterns and problem sets"
+            ],
+            "techStack": [
+                {
+                    "name": "React.js",
+                    "icon": "▲",
+                    "color": "blue"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "~",
+                    "color": "blue"
+                },
+                {
+                    "name": "Vite",
+                    "icon": "🌤️",
+                    "color": "yellow"
+                },
+                {
+                    "name": "Github Pages",
+                    "icon": "🗺️",
+                    "color": "green"
+                }
+            ],
+            "image": "/dsaLeetcodePattern.png",
+            "githubUrl": "https://github.com/ab-sc4t/dsa-leetcode-patterns",
+            "liveUrl": "unavailable"
+        },
+        {
+            "id": 5,
+            "title": "Encrypted Image Sharing",
+            "description": "An encrypted image sharing platform that allows users to securely upload, share, and access images protected by password-based encryption. Designed with privacy in mind, the platform ensures that only users with the correct password can decrypt and view shared images.",
+            "features": [
+                "Client-side image encryption using password-based protection",
+                "Secure image sharing workflow—images remain encrypted until the correct password is entered",
+                "User-friendly interface for uploading, sharing, and accessing encrypted images",
+                "Prevents unauthorized access by not storing decryption keys on the server",
+                "Streamlined process for both senders and recipients to maintain image privacy"
+            ],
+            "techStack": [
+                {
+                    "name": "React.js",
+                    "icon": "▲",
+                    "color": "blue"
+                },
+                {
+                    "name": "Material UI",
+                    "icon": "🔒",
+                    "color": "blue"
+                },
+                {
+                    "name": "Node.js",
+                    "icon": "🌤️",
+                    "color": "yellow"
+                },
+                {
+                    "name": "Express.js",
+                    "icon": "�",
+                    "color": "green"
+                },
+                {
+                    "name": "Github Pages",
+                    "icon": "�",
+                    "color": "green"
+                },
+                {
+                    "name": "Render (backend deployment)",
+                    "icon": "�",
+                    "color": "green"
+                }
+            ],
+            "image": "/encryptedImageSharing.png",
+            "githubUrl": "https://github.com/ab-sc4t/encrypted-image-sharing",
+            "liveUrl": "unavailable"
+        }
+    ]
+}

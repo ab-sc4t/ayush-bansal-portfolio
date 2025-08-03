@@ -1,0 +1,116 @@
+{
+    "experiences": [
+        {
+            "id": 1,
+            "company": "MyNextDeveloper",
+            "role": "Software Developer Intern",
+            "duration": "May 2025 - July 2025 ( 2 months )",
+            "description": "Designed and developed robust web applications leveraging modern frameworks like Next.js and React Flow. Led end-to-end implementation of live features, collaborating closely with product and backend teams to deliver scalable, interactive solutions.",
+            "achievements": [
+                "Developed full-stack features using Next.js, TypeScript, and MongoDB, including optimized aggregation pipelines, modular API routes, and dynamic frontend components with advanced React Hooks.",
+                "Implemented end-to-end live transcription using the Web Speech API, converting real-time speech to VTT subtitles with relative timecodes, efficient chunk handling, and backend persistence.",
+                "Built an interactive flowchart editor with React Flow, enabling draggable custom nodes, dynamic edge-based node creation, and loop prevention for learning path visualization."
+            ],
+            "techStack": [
+                {
+                    "name": "Next.js",
+                    "icon": "▲",
+                    "color": "blue"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "TS",
+                    "color": "blue"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "🍃",
+                    "color": "green"
+                },
+                {
+                    "name": "Material UI",
+                    "icon": "🚀",
+                    "color": "gray"
+                },
+                {
+                    "name": "Git",
+                    "icon": "💎",
+                    "color": "orange"
+                }
+            ],
+            "companyUrl": "https://mynextdeveloper.com"
+        },
+        {
+            "id": 2,
+            "company": "RawCubes",
+            "role": "MERN stack Developer",
+            "duration": "December 2024 - January 2025 ( 1 month )",
+            "description": "Engineered and maintained responsive user interfaces using React.js and Redux, ensuring seamless integration with backend APIs. Worked collaboratively with cross-functional teams to optimize database performance and resolve complex issues.",
+            "achievements": [
+                "Engineered responsive UIs using React.js & Redux to integrate seamlessly with Node.js/Express.js APIs.",
+                "Tuned MongoDB queries for improved read/write speed and performance.",
+                "Implemented Redux and React Hooks to enhance state management and scalability.",
+                "Collaborated cross-functionally with backend teams to refine APIs and debug critical issues."
+            ],
+            "techStack": [
+                {
+                    "name": "React.js",
+                    "icon": "⚛️",
+                    "color": "blue"
+                },
+                {
+                    "name": "Redux",
+                    "icon": "🔄",
+                    "color": "purple"
+                },
+                {
+                    "name": "Node.js",
+                    "icon": "🟢",
+                    "color": "green"
+                },
+                {
+                    "name": "Express.js",
+                    "icon": "🚀",
+                    "color": "gray"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "🍃",
+                    "color": "green"
+                }
+            ],
+            "companyUrl": "https://www.grafine.ai/"
+        },
+        {
+            "id": 3,
+            "company": "NexTurn",
+            "role": "Frontend Developer Intern",
+            "duration": "June 2024 - July 2024 ( 2 months )",
+            "description": "Revamped and optimized front-end architecture for enhanced usability and design consistency. Focused on improving performance, maintainability, and user experience across the application.",
+            "achievements": [
+                "Revamped UI with React.js components, improving responsiveness and rendering speed.",
+                "Migrated styling from Tailwind CSS to Material-UI for a cohesive design system.",
+                "Built an intuitive search dialog and active-nav highlight functionality.",
+                "Pruned unused CSS, improving performance and maintainability."
+            ],
+            "techStack": [
+                {
+                    "name": "React",
+                    "icon": "⚛️",
+                    "color": "blue"
+                },
+                {
+                    "name": "Material UI",
+                    "icon": "�",
+                    "color": "gray"
+                },
+                {
+                    "name": "React Hooks",
+                    "icon": "🎯",
+                    "color": "green"
+                }
+            ],
+            "companyUrl": "https://nexturn.com/"
+        }
+    ]
+}

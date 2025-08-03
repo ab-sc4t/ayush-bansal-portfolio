@@ -1,0 +1,165 @@
+{
+    "techRows": [
+        [
+            {
+                "name": "TypeScript",
+                "logo": "TS",
+                "color": "blue"
+            },
+            {
+                "name": "Tailwind CSS",
+                "logo": "~",
+                "color": "blue"
+            },
+            {
+                "name": "Motion",
+                "logo": "→",
+                "color": "blue"
+            },
+            {
+                "name": "SSJS",
+                "logo": "SS",
+                "color": "blue"
+            },
+            {
+                "name": "PostgreSQL",
+                "logo": "🐘",
+                "color": "blue"
+            },
+            {
+                "name": "MongoDB",
+                "logo": "🍃",
+                "color": "green"
+            },
+            {
+                "name": "Prisma",
+                "logo": "△",
+                "color": "blue"
+            },
+            {
+                "name": "pnpm",
+                "logo": "📦",
+                "color": "orange"
+            },
+            {
+                "name": "Bun",
+                "logo": "😊",
+                "color": "white"
+            },
+            {
+                "name": "Git",
+                "logo": "💎",
+                "color": "orange"
+            },
+            {
+                "name": "GitHub",
+                "logo": "🐙",
+                "color": "white"
+            }
+        ],
+        [
+            {
+                "name": "React",
+                "logo": "⚛️",
+                "color": "blue"
+            },
+            {
+                "name": "Next.js",
+                "logo": "▲",
+                "color": "white"
+            },
+            {
+                "name": "Node.js",
+                "logo": "🟢",
+                "color": "green"
+            },
+            {
+                "name": "Docker",
+                "logo": "🐳",
+                "color": "blue"
+            },
+            {
+                "name": "AWS",
+                "logo": "☁️",
+                "color": "orange"
+            },
+            {
+                "name": "Vercel",
+                "logo": "▲",
+                "color": "black"
+            },
+            {
+                "name": "Figma",
+                "logo": "🎨",
+                "color": "purple"
+            },
+            {
+                "name": "Framer",
+                "logo": "⚡",
+                "color": "blue"
+            },
+            {
+                "name": "Stripe",
+                "logo": "💳",
+                "color": "purple"
+            },
+            {
+                "name": "PlanetScale",
+                "logo": "🌍",
+                "color": "green"
+            }
+        ],
+        [
+            {
+                "name": "Zustand",
+                "logo": "🐻",
+                "color": "orange"
+            },
+            {
+                "name": "Zod",
+                "logo": "⚡",
+                "color": "yellow"
+            },
+            {
+                "name": "tRPC",
+                "logo": "🔗",
+                "color": "blue"
+            },
+            {
+                "name": "TanStack",
+                "logo": "📊",
+                "color": "green"
+            },
+            {
+                "name": "Radix UI",
+                "logo": "🎯",
+                "color": "purple"
+            },
+            {
+                "name": "Shadcn/ui",
+                "logo": "🎨",
+                "color": "blue"
+            },
+            {
+                "name": "Lucide",
+                "logo": "👁️",
+                "color": "gray"
+            },
+            {
+                "name": "Clerk",
+                "logo": "🔐",
+                "color": "purple"
+            },
+            {
+                "name": "Resend",
+                "logo": "📧",
+                "color": "blue"
+            },
+            {
+                "name": "Uploadthing",
+                "logo": "📤",
+                "color": "green"
+            }
+        ]
+    ]
+}
