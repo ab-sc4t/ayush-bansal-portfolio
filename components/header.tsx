@@ -1,7 +1,7 @@
 "use client"
 
 import { Github, Menu, X } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export function Header() {
   const [activeItem, setActiveItem] = useState("Home")
@@ -14,6 +14,44 @@ export function Header() {
     { name: "Work", href: "#work" },
     { name: "Projects", href: "#project" },
   ]
+
+  // Scroll spy functionality
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navItems.map(item => ({
+        name: item.name,
+        element: document.querySelector(item.href)
+      })).filter(section => section.element)
+
+      if (sections.length === 0) return
+
+      const scrollPosition = window.scrollY + 100 // Offset for header height
+
+      // Find which section is currently in view
+      let currentSection = sections[0].name
+      
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i]
+        if (section.element) {
+          const rect = section.element.getBoundingClientRect()
+          if (rect.top <= 100) { // 100px offset for header
+            currentSection = section.name
+            break
+          }
+        }
+      }
+
+      setActiveItem(currentSection)
+    }
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll)
+    
+    // Initial check
+    handleScroll()
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const handleNavClick = (item: { name: string; href: string }) => {
     setActiveItem(item.name)
