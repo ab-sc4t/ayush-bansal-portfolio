@@ -55,7 +55,7 @@ export function ContactSection() {
                     <div className="text-center mb-16">
                         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
                             <span className="text-white">Get in</span>{" "}
-                            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent italic">touch</span>
+                            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent italic px-2">touch</span>
                         </h2>
                         <p className="text-gray-300 text-lg mt-6 max-w-2xl mx-auto">
                             Let's work together! Feel free to reach out for collaborations, opportunities, or just to say hello.

@@ -64,7 +64,7 @@ export function Hero() {
           <br />
           <span className="font-light" >Enhancing digital experiences that are</span>
           <br />
-          <span className="italic font-light bg-gradient-to-r from-purple-300 via-white to-purple-600 bg-clip-text text-transparent">
+          <span className="italic font-light bg-gradient-to-r from-purple-300 via-white to-purple-600 bg-clip-text text-transparent px-2">
             smooth, scalable, and made to impress.
           </span>
         </h1>
