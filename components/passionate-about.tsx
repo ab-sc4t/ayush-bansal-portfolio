@@ -1,10 +1,24 @@
 "use client"
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import techStackData from "@/data/tech-stack.json"
 
 export function PassionateAbout() {
     const techRows = techStackData.techRows
+    const [isMobile, setIsMobile] = useState(false)
+    const [isTablet, setIsTablet] = useState(false)
+
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsMobile(window.innerWidth < 768)
+            setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024)
+        }
+        
+        checkScreenSize()
+        window.addEventListener('resize', checkScreenSize)
+        
+        return () => window.removeEventListener('resize', checkScreenSize)
+    }, [])
 
     const directions = ["right-to-left", "left-to-right", "right-to-left"]
 
@@ -31,7 +45,7 @@ export function PassionateAbout() {
                                 className={`flex gap-4 animate-marquee ${directions[rowIndex] === "left-to-right" ? "animate-marquee-reverse" : "animate-marquee"
                                     }`}
                                 style={{
-                                    animationDuration: "20s",
+                                    animationDuration: isMobile ? "12s" : isTablet ? "10s" : "20s",
                                     animationIterationCount: "infinite",
                                     animationTimingFunction: "linear"
                                 }}
@@ -57,23 +71,23 @@ export function PassionateAbout() {
             {/* Custom animations */}
             <style jsx>{`
         @keyframes marquee {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
         }
         
         @keyframes marquee-reverse {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0%); }
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0%); }
         }
         
         .animate-marquee {
-          animation-name: marquee;
+            animation-name: marquee;
         }
         
         .animate-marquee-reverse {
-          animation-name: marquee-reverse;
+            animation-name: marquee-reverse;
         }
-      `}</style>
+    `}</style>
         </section>
     )
 }
